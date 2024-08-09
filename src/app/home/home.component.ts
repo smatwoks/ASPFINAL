@@ -8,6 +8,13 @@ import { Router } from '@angular/router';
   styleUrls: ['./home.component.css']
 })
 export class HomeComponent {
+  set(){
+    // let name = String(this.name);
+    let data ={ id:1,name:'reddy'};
+          localStorage.setItem("name", JSON.stringify(data));
+          console.log("true");
+  }
+
   email: string = '';
   name:string='';
   phone:string='';

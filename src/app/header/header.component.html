@@ -31,7 +31,7 @@
             </div>
           </ul>
         </li>
-        <li><a [routerLink]="['/services']" routerLinkActive="active">Services</a></li>
+        <li><a [routerLink]="['/services']" (click)="set()" routerLinkActive="active">Services</a></li>
         <li><a [routerLink]="['/contact']" routerLinkActive="active">Contact Us</a></li>
       </ul>
     </nav>
@@ -41,31 +41,31 @@
       </div>
       <ul>
         <li><a [routerLink]="['/home']" (click)="toggleSidebar()">Home</a></li>
-        <li class="dropdown"><a (click)="toggleDropdown()">Products ⬇️</a>
+        <li class="dropdown"><a (click)="toggleDropdown()" >Products ⬇️</a>
           <ul [ngClass]="{'show': dropdownActive}">
-            <li class="dropdown"><a (click)="toggleEnvironmentalDropdown()">Environmental ⬇️</a>
+            <li class="dropdown"><a (click)="toggleEnvironmentalDropdown()" >Environmental ⬇️</a>
               <ul [ngClass]="{'show': environmentalDropdownActive}">
-                <li><a [routerLink]="['/caaqms']" (click)="toggleSidebar()">CAAQMS</a></li>
-                <li><a [routerLink]="['/cems']" (click)="toggleSidebar()">CEMS</a></li>
-                <li><a [routerLink]="['/eqms']" (click)="toggleSidebar()">EQMS</a></li>
-                <li><a [routerLink]="['/water']" (click)="toggleSidebar()">Online Water Quality</a></li>
-                <li><a [routerLink]="['/air']" (click)="toggleSidebar()">Online Air Quality</a></li>
-                <li><a [routerLink]="['/port']" (click)="toggleSidebar()">Portable</a></li>
+                <li><a [routerLink]="['/caaqms']" (click)="toggleSidebar()" (click)="set()">CAAQMS</a></li>
+                <li><a [routerLink]="['/cems']" (click)="toggleSidebar()" (click)="set()">CEMS</a></li>
+                <li><a [routerLink]="['/eqms']" (click)="toggleSidebar()" (click)="set()">EQMS</a></li>
+                <li><a [routerLink]="['/water']" (click)="toggleSidebar()" (click)="set()">Online Water Quality</a></li>
+                <li><a [routerLink]="['/air']" (click)="toggleSidebar()" (click)="set()">Online Air Quality</a></li>
+                <li><a [routerLink]="['/port']" (click)="toggleSidebar()" (click)="set()">Portable</a></li>
               </ul>
             </li>
             <li class="dropdown"><a (click)="toggleAnalyticalDropdown()">Analytical ⬇️</a>
               <ul [ngClass]="{'show': analyticalDropdownActive}">
-                <li><a [routerLink]="['/purpose']" (click)="toggleSidebar()">General Purpose</a></li>
-                <li><a [routerLink]="['/process']" (click)="toggleSidebar()">Process</a></li>
-                <li><a [routerLink]="['/lab']" (click)="toggleSidebar()">Lab Use</a></li>
-                <li><a [routerLink]="['/medical']" (click)="toggleSidebar()">Medical</a></li>
-                <li><a [routerLink]="['/environ']" (click)="toggleSidebar()">Environmental</a></li>
-                <li><a [routerLink]="['/attach']" (click)="toggleSidebar()">Attachment</a></li>
+                <li><a [routerLink]="['/purpose']" (click)="toggleSidebar()" (click)="set()">General Purpose</a></li>
+                <li><a [routerLink]="['/process']" (click)="toggleSidebar()" (click)="set()">Process</a></li>
+                <li><a [routerLink]="['/lab']" (click)="toggleSidebar()" (click)="set()">Lab Use</a></li>
+                <li><a [routerLink]="['/medical']" (click)="toggleSidebar()" (click)="set()">Medical</a></li>
+                <li><a [routerLink]="['/environ']" (click)="toggleSidebar()" (click)="set()">Environmental</a></li>
+                <li><a [routerLink]="['/attach']" (click)="toggleSidebar()" (click)="set()">Attachment</a></li>
               </ul>
             </li>
           </ul>
         </li>
-        <li><a [routerLink]="['/services']" (click)="toggleSidebar()">Services</a></li>
+        <li><a [routerLink]="['/services']" (click)="toggleSidebar()"  (click)="set()">Services</a></li>
     <li><a [routerLink]="['/contact']" (click)="toggleSidebar()">Contact Us</a></li>
       </ul>
     
