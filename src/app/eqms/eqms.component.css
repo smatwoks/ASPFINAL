@@ -23,5 +23,91 @@
     width: 80%;
   }
 
+  h3 {
+    color: rgb(000, 121, 191); 
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', 'Arial', 'sans-serif';
+  }
   
+  .row {
+    padding-left: 0%;
+  }
   
+  .table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  .table th, .table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+  }
+  
+  .table th {
+    background-color: #f2f2f2;
+    color: black;
+    padding-left: 8px;
+  }
+  
+  .portfolio-flters th li {
+    text-align: left;
+  }
+
+  /* Container that holds both the table and the portfolio */
+.portfolio-isotope {
+  display: flex;
+  justify-content: flex-start;
+}
+
+/* Style the table to ensure it takes up a certain width */
+.portfolio-flters.table-bordered {
+  width: 20%; /* Adjust this percentage to control the table width */
+  margin-right: 20px; /* Space between table and portfolio */
+}
+
+/* Ensure the portfolio container takes the rest of the available space */
+.portfolio-container {
+  width: 75%; /* Adjust this percentage to control the portfolio width */
+}
+
+.table {
+  margin-right: 20px; /* Adjust the value as needed */
+}
+
+.portfolio-container {
+  margin-left: 55px; /* Adds space to the left of the container */
+} 
+
+/* General styles for desktop and larger screens */
+.portfolio-isotope {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.portfolio-flters.table-bordered {
+  width: 20%;
+  margin-right: 20px;
+}
+
+.portfolio-container {
+  width: 75%;
+  margin-left: 55px;
+}
+
+/* Responsive styles for mobile devices */
+@media screen and (max-width: 767px) {
+  .portfolio-isotope {
+    flex-direction: column; /* Stack the elements vertically on mobile */
+  }
+
+  .portfolio-flters.table-bordered,
+  .portfolio-container {
+    width: 100%; /* Make both the table and portfolio container full width */
+    margin-right: 0; /* Remove right margin */
+    margin-left: 0; /* Remove left margin */
+  }
+
+  .portfolio-container {
+    margin-top: 20px; /* Add some space between the table and the portfolio container */
+  }
+}

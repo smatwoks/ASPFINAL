@@ -16,50 +16,53 @@
 
 
       <div class="row  portfolio-isotope" data-portfolio-filter="*" data-portfolio-layout="masonry" data-portfolio-sort="original-order">
-  
-  
-  
-        
-         
-       
-
 
       <div class="row">
-        <div class="col-md-3">
-          <table class="table portfolio-flters ">
+        <div class="col-md-2">
+          <table class="table portfolio-flters  table-bordered">
             <thead>
               <tr>
-                <th><li data-filter="*" class="filter-active" >All</li></th>
+                <th><li data-filter="*" class="filter-active">All</li></th>
               </tr>
             </thead>
             <tbody>
               <tr>
-                <td> <li data-filter=".filter-MonitoringSystem" >Monitoring System</li></td>
+                <td><li data-filter=".filter-MonitoringSystem">Monitoring System</li></td>
               </tr>
               <tr>
-                <td><li data-filter=".filter-SO2Analyzer" >SO2 Analyzer</li></td>
+                <td><li data-filter=".filter-PM25Analyzer">PM2.5 Analyzer</li></td>
               </tr>
               <tr>
-                <td><li data-filter=".filter-NOxAnalyzer" >NOx Analyzer</li></td>
+                <td><li data-filter=".filter-PM10Analyzer">PM10 Analyzer</li></td>
               </tr>
               <tr>
-                <td><li data-filter=".filter-COAnalyzer" >CO Analyzer</li></td>
+                <td><li data-filter=".filter-SO2Analyzer">SO2 Analyzer</li></td>
               </tr>
               <tr>
-                <td><li data-filter=".filter-O3Analyzer" >O3 Analyzer</li></td>
+                <td><li data-filter=".filter-NOxAnalyzer">NOx Analyzer</li></td>
               </tr>
               <tr>
-                <td><li data-filter=".filter-NH3Analyzer" >NH3 Analyzer</li></td>
+                <td><li data-filter=".filter-COAnalyzer">CO Analyzer</li></td>
               </tr>
               <tr>
-                <td><li data-filter=".filter-PM10Analyzer" >PM10 Analyzer</li></td>
+                <td><li data-filter=".filter-O3Analyzer">O3 Analyzer</li></td>
               </tr>
               <tr>
-                <td><li data-filter=".filter-PM25Analyzer" >PM2.5 Analyzer</li></td>
+                <td><li data-filter=".filter-NH3Analyzer">NH3 Analyzer</li></td>
+              </tr>
+              <tr>
+                <td><li data-filter=".filter-dc">Dynamic Calibrator</li></td>
+              </tr>
+              <tr>
+                <td><li data-filter=".filter-zero">Zero Gas Generator</li></td>
+              </tr>
+              <tr>
+                <td><li data-filter=".filter-voc">Online VOC Analyzer</li></td>
               </tr>
             </tbody>
           </table>
         </div>
+        
 
         <div class="col-md-9">
           <div class="row gy-4 portfolio-container" data-aos="fade-up" data-aos-delay="200">
@@ -71,7 +74,7 @@
                   </div>
                   <div class="col-md-8 d-flex align-items-center">
                     <div>
-                      <h2>Continuous Ambient Air Quality Monitoring System (CAAQMS)</h2>
+                      <h3>Continuous Ambient Air Quality Monitoring System (CAAQMS)</h3>
                       <h6>On-Line Continuous Ambient Air Monitoring System / Station for the measurement of SO2, NOx, CO, CO2, O3, PM10, PM2.5 etc. in the ambient environment.</h6>
                       <ul>
                         <li>Analyzers approved by various International Agencies like US EPA, TUV, EN, and in line with norms as defined by Central Pollution Control Board (CPCB) including online calibration from remotely located servers like CPCB and State PCB servers.</li>
@@ -89,17 +92,69 @@
               </div>
             </div>
 
+
+
+            <div class="col-md-12  portfolio-item filter-PM25Analyzer">
+              <div class="card">
+              <div class="row">
+                <div class="col-md-4 d-flex align-items-center">
+                  <img src="../../assets/img/caaqm/caaqms-systems-008.jpg" class="img-fluid" alt="CAAQMS" style="max-width: 300px; height: auto;">
+                </div>
+                <div class="col-md-8 d-flex align-items-center">
+                  <div>
+                    <h3>PM2.5 Analyzer</h3>
+                    <p>The Spirant™ BAM 1100 automatically measures and records airborne particulate concentrations using the beta ray attenuation method. It is designated by the US EPA as Federal Equivalent Method for PM2.5 monitoring.</p>
+                  </div>
+                </div>
+                <div class="col-md-12 d-flex justify-content-center">
+                    <a [routerLink]="['/contact']" >
+                        <button class="btn" style="border-radius: 20px; border-color: blueviolet ;  " >
+                            Get Qoute
+                        </button>
+                    </a>
+                  </div>
+              </div>
+            </div>
+            </div>
+
+
+
+            
+            <div class="col-md-12  portfolio-item filter-PM10Analyzer">
+              <div class="card">
+              <div class="row">
+                <div class="col-md-4 d-flex align-items-center">
+                  <img src="../../assets/img/caaqm/caaqms-systems-008.jpg" class="img-fluid" alt="CAAQMS" style="max-width: 300px; height: auto;">
+                </div>
+                <div class="col-md-8 d-flex align-items-center">
+                  <div>
+                    <h3>PM10 Analyzer</h3>
+                    <p>The Spirant™ BAM 1000 automatically measures and records airborne particulate concentrations using the beta ray attenuation method. It is designated by the US EPA as Federal Equivalent Method for PM10 monitoring.</p>
+                  </div>
+                </div>
+                <div class="col-md-12 d-flex justify-content-center">
+                    <a [routerLink]="['/contact']" >
+                        <button class="btn" style="border-radius: 20px; border-color: blueviolet ;  " >
+                            Get Qoute
+                        </button>
+                    </a>
+                  </div>
+              </div>
+            </div>
+            </div>
+  
+
             <!-- Add additional product cards here as needed -->
             <!-- Example for SO2 Analyzer -->
             <div class="col-md-12 portfolio-item filter-SO2Analyzer">
               <div class="card">
                 <div class="row">
                   <div class="col-md-4 d-flex align-items-center">
-                    <img src="../../assets/img/caaqm/caaqms-systems-003.jpg" class="img-fluid" alt="SO2 Analyzer" style="max-width: 300px; height: auto;">
+                    <img src="../../assets/img/caaqm/caaqms-systems-003.png" class="img-fluid" alt="SO2 Analyzer" style="max-width: 300px; height: auto;">
                   </div>
                   <div class="col-md-8 d-flex align-items-center">
                     <div>
-                      <h2>SO2 Analyzer</h2>
+                      <h3>SO2 Analyzer</h3>
                       <p>The Serinus® 50 sulfur dioxide (SO2) analyser delivers precise and reliable performance at excellent value. It uses proven pulsed UV fluorescent radiation technology to measure SO2 in ambient air (LDL < 0.3 ppb, range 0 to 20 ppm).</p>
                     </div>
                   </div>
@@ -116,11 +171,11 @@
               <div class="card">
               <div class="row">
                 <div class="col-md-4 d-flex align-items-center">
-                  <img src="../../assets/img/caaqm/caaqms-systems-003.jpg" class="img-fluid" alt="CAAQMS" style="max-width: 300px; height: auto;">
+                  <img src="../../assets/img/caaqm/caaqms-systems-003.png" class="img-fluid" alt="CAAQMS" style="max-width: 300px; height: auto;">
                 </div>
                 <div class="col-md-8 d-flex align-items-center">
                   <div>
-                    <h2>NOx Analyzer</h2>
+                    <h3>NOx Analyzer</h3>
                     <p>The Serinus® 40 Oxides of Nitrogen (NOx) analyser delivers precise and reliable performance at excellent value. It uses proven chemiluminescence technology to measure NO, NO2 and NOx in ambient air (LDL < 0.4 ppb, range 0 to 20 ppm).</p>
                   </div>
                 </div>
@@ -141,11 +196,11 @@
               <div class="card">
               <div class="row">
                 <div class="col-md-4 d-flex align-items-center">
-                  <img src="../../assets/img/caaqm/caaqms-systems-003.jpg" class="img-fluid" alt="CAAQMS" style="max-width: 300px; height: auto;">
+                  <img src="../../assets/img/caaqm/caaqms-systems-003.png" class="img-fluid" alt="CAAQMS" style="max-width: 300px; height: auto;">
                 </div>
                 <div class="col-md-8 d-flex align-items-center">
                   <div>
-                    <h2>COAnalyzer</h2>
+                    <h3>COAnalyzer</h3>
                     <p>The Serinus® 30 carbon monoxide (CO) analyser delivers precise and reliable performance at excellent value. It uses proven NDIR gas filter correlation technology to measure CO in ambient air (LDL < 40 ppb, range 0 to 200 ppm).</p>
                   </div>
                 </div>
@@ -165,11 +220,11 @@
               <div class="card">
               <div class="row">
                 <div class="col-md-4 d-flex align-items-center">
-                  <img src="../../assets/img/caaqm/caaqms-systems-003.jpg" class="img-fluid" alt="CAAQMS" style="max-width: 300px; height: auto;">
+                  <img src="../../assets/img/caaqm/caaqms-systems-003.png" class="img-fluid" alt="CAAQMS" style="max-width: 300px; height: auto;">
                 </div>
                 <div class="col-md-8 d-flex align-items-center">
                   <div>
-                    <h2>O3 Analyzer</h2>
+                    <h3>O3 Analyzer</h3>
                     <p>The Serinus® 10 Ozone (O3) analyser delivers precise and reliable performance at excellent value. It uses proven non-dispersive ultraviolet (UV) absorption technology to measure O3 in ambient air (LDL < 0.5 ppb, range 0 to 20 ppm).</p>
                   </div>
                 </div>
@@ -191,11 +246,11 @@
               <div class="card">
               <div class="row">
                 <div class="col-md-4 d-flex align-items-center">
-                  <img src="../../assets/img/caaqm/caaqms-systems-003.jpg" class="img-fluid" alt="CAAQMS" style="max-width: 300px; height: auto;">
+                  <img src="../../assets/img/caaqm/caaqms-systems-003.png" class="img-fluid" alt="CAAQMS" style="max-width: 300px; height: auto;">
                 </div>
                 <div class="col-md-8 d-flex align-items-center">
                   <div>
-                    <h2>NH3 Analyzer</h2>
+                    <h3>NH3 Analyzer</h3>
                     <p>The Serinus® 44 analyser delivers precise and reliable performance at excellent value. It uses proven chemiluminescence technology and an external thermal catalytic converter to measure NO, NO2, NOX and NH3 in ambient air.</p>
                   </div>
                 </div>
@@ -210,18 +265,79 @@
             </div>
             </div>
 
+           
 
 
-            <div class="col-md-12  portfolio-item filter-PM10Analyzer">
+           
+            
+
+
+            <div class="col-md-12  portfolio-item filter-dc">
               <div class="card">
               <div class="row">
                 <div class="col-md-4 d-flex align-items-center">
-                  <img src="../../assets/img/caaqm/caaqms-systems-008.jpg" class="img-fluid" alt="CAAQMS" style="max-width: 300px; height: auto;">
+                  <img src="../../assets/img/caaqm/dc.png" class="img-fluid" alt="CAAQMS" style="max-width: 300px; height: auto;">
                 </div>
                 <div class="col-md-8 d-flex align-items-center">
                   <div>
-                    <h2>PM10 Analyzer</h2>
-                    <p>The Spirant™ BAM 1000 automatically measures and records airborne particulate concentrations using the beta ray attenuation method. It is designated by the US EPA as Federal Equivalent Method for PM10 monitoring.</p>
+                    <h3>Dynamic Calibrator</h3>
+                    <p>ASP-580 Dynamic Calibrator is a multi-channel gas calibration instrument based on Microprocessor Technology and specifically developed for precise gas analyzer. By adopting high precision mass flow controller and standard gas, the calibrator provides calibration standard gas for zero point and span test of multiple gas parameters, as well as four gas sources at the same time. Dynamic calibrator can be equipped with built-in programmable ozone generator, which can be used not only for accurate and reliable ozone calibration, but also for GPT to generate NO2. The ozone generator adopts multi-point piecewise linear drive to ensure the repeatability and accuracy of ozone concentration; the optional photometer also enables higher precision control of the ozone generator. Dynamic calibrator has fast response, high repeatability, high precision and is easy to use. It can also be customized according to customer requirements.</p>
+                  </div>
+                </div>
+                <div class="col-md-12 d-flex justify-content-center">
+                    <a [routerLink]="['/contact']" >
+                        <button class="btn" style="border-radius: 20px; border-color: blueviolet ;  " >
+                            Get Qoute
+                        </button>
+                    </a>
+                  </div>
+              </div>
+            </div>
+            </div>
+
+
+
+            <div class="col-md-12  portfolio-item filter-zero">
+              <div class="card">
+              <div class="row">
+                <div class="col-md-4 d-flex align-items-center">
+                  <img src="../../assets/img/caaqm/zero.png" class="img-fluid" alt="CAAQMS" style="max-width: 300px; height: auto;">
+                </div>
+                <div class="col-md-8 d-flex align-items-center">
+                  <div>
+                    <h3>Zero Gas Generator</h3>
+                    <p>ASP-590 Zero Gas Generator is an instrument that provides clean, dry zero gas. The Zero Gas Generator includes an external oil-free air compressor, pressure flow controller, water removal system, SO2, NO, NO2, O3 and h3S remover, CO and hydrocarbon remover. The Zero Gas Generator is based on adsorption, filtration, reaction and other principles to remove SO2, NO, NO2, O3, h3S, CO, NH3, hydrocarbons and particulate matters in the air, and output dry and clean air. An internal water removal system removes moisture from the air, produces air of which dew point is below -20°C, and is independent of the dew point at the inlet. It is also helpful to remove other gases and greatly prolongs the service life of the chemical remover.
+
+                    </p>
+                  </div>
+                </div>
+                <div class="col-md-12 d-flex justify-content-center">
+                    <a [routerLink]="['/contact']" >
+                        <button class="btn" style="border-radius: 20px; border-color: blueviolet ;  " >
+                            Get Qoute
+                        </button>
+                    </a>
+                  </div>
+              </div>
+            </div>
+            </div>
+            
+
+
+
+
+           
+            <div class="col-md-12  portfolio-item filter-voc">
+              <div class="card">
+              <div class="row">
+                <div class="col-md-4 d-flex align-items-center">
+                  <img src="https://storage.googleapis.com/studio-cms-assets/projects/1pqDwe1bOj/s-1200x1200_v-fms_webp_ffa2d18d-4013-4e7f-84b7-29917e8f7d6b_small.webp" class="img-fluid" alt="CAAQMS" style="max-width: 300px; height: auto;">
+                </div>
+                <div class="col-md-8 d-flex align-items-center">
+                  <div>
+                    <h3>Online VOC Analyzer</h3>
+                    <p> This measuring instrument is a state-of-the-art VOC monitor that uses a hydrogen flame ionization detector with heating of all measurement lines. The sample flow path is heated to a high temperature for measurement (HOT FID), so it can measure a wide range of T-VOCs quickly and continuously, from low concentration and low boiling point to high concentration and high boiling point. In addition, the use of a corrosion-resistant FID allows it to measure organic chlorine gases. In the unlikely event that the hydrogen flame goes out, the instrument is designed to automatically shut off the hydrogen line, so you can use it with peace of mind.
+                    </p>
                   </div>
                 </div>
                 <div class="col-md-12 d-flex justify-content-center">
@@ -236,29 +352,7 @@
             </div>
   
   
-  
-            <div class="col-md-12  portfolio-item filter-PM25Analyzer">
-              <div class="card">
-              <div class="row">
-                <div class="col-md-4 d-flex align-items-center">
-                  <img src="../../assets/img/caaqm/caaqms-systems-003.jpg" class="img-fluid" alt="CAAQMS" style="max-width: 300px; height: auto;">
-                </div>
-                <div class="col-md-8 d-flex align-items-center">
-                  <div>
-                    <h2>PM2.5 Analyzer</h2>
-                    <p>The Spirant™ BAM 1100 automatically measures and records airborne particulate concentrations using the beta ray attenuation method. It is designated by the US EPA as Federal Equivalent Method for PM2.5 monitoring.</p>
-                  </div>
-                </div>
-                <div class="col-md-12 d-flex justify-content-center">
-                    <a [routerLink]="['/contact']" >
-                        <button class="btn" style="border-radius: 20px; border-color: blueviolet ;  " >
-                            Get Qoute
-                        </button>
-                    </a>
-                  </div>
-              </div>
-            </div>
-            </div>
+            
   
 
 

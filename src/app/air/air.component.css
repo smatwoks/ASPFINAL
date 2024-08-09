@@ -1,0 +1,90 @@
+h3{
+  color: rgb(000, 121, 191); 
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', 'Arial','sans-serif';
+ }
+
+
+.portfolio-flters {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .portfolio-flters li {
+    margin-bottom: 10px;
+  }
+
+
+  #one, #two {
+    display: inline-block;
+    vertical-align: top;
+  }
+  
+  #one {
+    width: 20%; 
+  }
+  
+  #two {
+    width: 80%;
+  }
+
+  .row{
+    padding-left: 0%;
+  }
+  
+  .table {
+    width: 100%;
+    border-collapse: collapse; /* Ensures borders are collapsed into a single border */
+  }
+  
+  .table th, .table td {
+    border: 1px solid #ddd; /* Add border around table cells */
+    padding: 8px; /* Add padding inside table cells */
+    text-align: left; /* Align text to the left */
+  }
+  
+  .table th {
+    text-align: left; /* Aligns text to the left */
+    background-color: #f2f2f2;
+    color: black;
+    padding-left: 8px; /* Ensures padding on the left for consistent spacing */
+  }
+  
+  .portfolio-flters th li {
+    text-align: left;
+  }
+  
+  /* General styles for desktop and larger screens */
+.portfolio-isotope {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.portfolio-flters.table-bordered {
+  width: 20%;
+  margin-right: 20px;
+}
+
+.portfolio-container {
+  width: 75%;
+  margin-left: 55px;
+}
+
+/* Responsive styles for mobile devices */
+@media screen and (max-width: 767px) {
+  .portfolio-isotope {
+    flex-direction: column; /* Stack the elements vertically on mobile */
+  }
+
+  .portfolio-flters.table-bordered,
+  .portfolio-container {
+    width: 100%; /* Make both the table and portfolio container full width */
+    margin-right: 0; /* Remove right margin */
+    margin-left: 0; /* Remove left margin */
+  }
+
+  .portfolio-container {
+    margin-top: 20px; /* Add some space between the table and the portfolio container */
+  }
+}

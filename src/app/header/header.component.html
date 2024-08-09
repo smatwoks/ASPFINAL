@@ -1,21 +1,34 @@
 <header id="header" class="header d-flex align-items-center" style="height: fit-content;">
   <div class="container-fluid container-xl d-flex align-items-center justify-content-between">
     <a href="index.html" class="logo d-flex align-items-center">
-      <h1>ASP<span>.</span></h1>
+      <img src="../../assets/img/ASP Logo.ico" alt="ASP Logo" width="100" height="50">
     </a>
     <button class="mobile-nav-toggle bi bi-list" (click)="toggleSidebar()"></button>
     <nav id="navbar" class="navbar">
       <ul>
         <li><a [routerLink]="['/home']" routerLinkActive="active">Home</a></li>
-        <li class="dropdown"><a [routerLink]="['/products']" routerLinkActive="active"><span>Products</span> <i class="bi bi-chevron-down dropdown-indicator"></i></a>
-          <ul>
-            <li><a [routerLink]="['/caaqms']" (click)="set()">CAAQMS</a></li>
-            <li><a [routerLink]="['/cems']" (click)="set()">CEMS</a></li>
-            <li><a [routerLink]="['/eqms']" (click)="set()">EQMS</a></li>
-            <li><a [routerLink]="['/port']" (click)="set()">Portable</a></li>
-            <li><a [routerLink]="['/water']" (click)="set()">Water Quality</a></li>
-            <li><a [routerLink]="['/analytical']" (click)="set()">Analytical Instruments</a></li>
-            <li><a [routerLink]="['/gas']" (click)="set()">Gas Chromatography</a></li>
+        <li class="dropdown"><a [routerLink]="['/products']" routerLinkActive="active"><span>Products</span> <i
+              class="bi bi-chevron-down dropdown-indicator"></i></a>
+          <ul class="dropdown-content side-by-side">
+            <div class="column">
+              <li style="margin-left: 10%; font-size: larger; color: rgb(000,121,191);">Environmental</li>
+              <li><a [routerLink]="['/caaqms']" (click)="set()">CAAQMS</a></li>
+              <li><a [routerLink]="['/cems']" (click)="set()">CEMS</a></li>
+              <li><a [routerLink]="['/eqms']" (click)="set()">EQMS</a></li>
+              <li><a [routerLink]="['/water']" (click)="set()">Online Water Quality</a></li>
+              <li><a [routerLink]="['/air']" (click)="set()">Online Air Quality</a></li>
+              <li><a [routerLink]="['/port']" (click)="set()">Portable</a></li>
+            </div>
+            <div class="vertical-line"></div>
+            <div class="column">
+              <li style="margin-left: 10%; font-size: larger; color: rgb(000,121,191);">Analytical</li>
+              <li><a [routerLink]="['/purpose']" (click)="set()">General Purpose</a></li>
+              <li><a [routerLink]="['/process']" (click)="set()">Process</a></li>
+              <li><a [routerLink]="['/lab']" (click)="set()">Lab Use</a></li>
+              <li><a [routerLink]="['/medical']" (click)="set()">Medical</a></li>
+              <li><a [routerLink]="['/environ']" (click)="set()">Environmental</a></li>
+              <li><a [routerLink]="['/attach']" (click)="set()">Attachment</a></li>
+            </div>
           </ul>
         </li>
         <li><a [routerLink]="['/services']" routerLinkActive="active">Services</a></li>
@@ -28,11 +41,34 @@
       </div>
       <ul>
         <li><a [routerLink]="['/home']" (click)="toggleSidebar()">Home</a></li>
-        <li><a [routerLink]="['/products']" (click)="toggleSidebar()">Products</a></li>
+        <li class="dropdown"><a (click)="toggleDropdown()">Products ⬇️</a>
+          <ul [ngClass]="{'show': dropdownActive}">
+            <li class="dropdown"><a (click)="toggleEnvironmentalDropdown()">Environmental ⬇️</a>
+              <ul [ngClass]="{'show': environmentalDropdownActive}">
+                <li><a [routerLink]="['/caaqms']" (click)="toggleSidebar()">CAAQMS</a></li>
+                <li><a [routerLink]="['/cems']" (click)="toggleSidebar()">CEMS</a></li>
+                <li><a [routerLink]="['/eqms']" (click)="toggleSidebar()">EQMS</a></li>
+                <li><a [routerLink]="['/water']" (click)="toggleSidebar()">Online Water Quality</a></li>
+                <li><a [routerLink]="['/air']" (click)="toggleSidebar()">Online Air Quality</a></li>
+                <li><a [routerLink]="['/port']" (click)="toggleSidebar()">Portable</a></li>
+              </ul>
+            </li>
+            <li class="dropdown"><a (click)="toggleAnalyticalDropdown()">Analytical ⬇️</a>
+              <ul [ngClass]="{'show': analyticalDropdownActive}">
+                <li><a [routerLink]="['/purpose']" (click)="toggleSidebar()">General Purpose</a></li>
+                <li><a [routerLink]="['/process']" (click)="toggleSidebar()">Process</a></li>
+                <li><a [routerLink]="['/lab']" (click)="toggleSidebar()">Lab Use</a></li>
+                <li><a [routerLink]="['/medical']" (click)="toggleSidebar()">Medical</a></li>
+                <li><a [routerLink]="['/environ']" (click)="toggleSidebar()">Environmental</a></li>
+                <li><a [routerLink]="['/attach']" (click)="toggleSidebar()">Attachment</a></li>
+              </ul>
+            </li>
+          </ul>
+        </li>
         <li><a [routerLink]="['/services']" (click)="toggleSidebar()">Services</a></li>
-        <li><a [routerLink]="['/contact']" (click)="toggleSidebar()">Contact Us</a></li>
-        <!-- Add the rest of the links as needed -->
+    <li><a [routerLink]="['/contact']" (click)="toggleSidebar()">Contact Us</a></li>
       </ul>
+    
     </div>
   </div>
 </header>

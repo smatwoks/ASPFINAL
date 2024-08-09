@@ -1,26 +1,45 @@
-import { Component, OnInit } from '@angular/core';
-import { Router, NavigationEnd } from '@angular/router';
+import { Component,  } from '@angular/core';
 
 @Component({
   selector: 'app-header',
   templateUrl: './header.component.html',
   styleUrls: ['./header.component.css']
 })
-export class HeaderComponent implements OnInit {
-  sidebarActive: boolean = false;
+export class HeaderComponent  {
+   sidebarActive: boolean = false;
+  dropdownActive: boolean = false;
+  environmentalDropdownActive = false;
+  analyticalDropdownActive = false;
 
   toggleSidebar() {
     this.sidebarActive = !this.sidebarActive;
   }
 
+  toggleDropdown() {
+    this.dropdownActive = !this.dropdownActive;
+  }
+
+  toggleEnvironmentalDropdown() {
+    this.environmentalDropdownActive = !this.environmentalDropdownActive;
+    // Optionally close the analytical dropdown when environmental is opened
+    if (this.environmentalDropdownActive) {
+      this.analyticalDropdownActive = false;
+    }
+  }
+
+  toggleAnalyticalDropdown() {
+    this.analyticalDropdownActive = !this.analyticalDropdownActive;
+    // Optionally close the environmental dropdown when analytical is opened
+    if (this.analyticalDropdownActive) {
+      this.environmentalDropdownActive = false;
+    }
+  }
 
   set() {
-    // Additional logic for setting state if needed
+    let data = { id: 1, name: 'reddy' };
+    localStorage.setItem("name", JSON.stringify(data));
+    console.log("true");
+    this.sidebarActive = false; // Close sidebar when a link is clicked
   }
-
-
-  constructor(private router: Router) { }
   
-  ngOnInit(): void {
-  }
 }
