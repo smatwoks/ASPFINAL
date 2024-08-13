@@ -26,7 +26,7 @@ export class ContactComponent {
       msg:this.msg
     };
     console.log(bodyData);
-      this.http.post("https://application-development-webdow-3.onrender.com/ok",bodyData).subscribe((result:any)=>{
+      this.http.post("https://aspbackendapi.aspinstruments.in/ok",bodyData).subscribe((result:any)=>{
         console.log(result.message);
 
         if(result.message == 'one'){
