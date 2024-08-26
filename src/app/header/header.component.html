@@ -1,15 +1,15 @@
 <header id="header" class="header d-flex align-items-center" style="height: fit-content;">
-  <div class="container-fluid container-xl d-flex align-items-center justify-content-between">
-    <a href="index.html" class="logo d-flex align-items-center">
-      <img src="../../assets/img/Environmental___Analytical_Suppiles__3_-removebg-preview.png" alt="ASP Logo" width="100" height="50">
+  <div class="container-fluid container-xl d-flex align-items-center justify-content-between" >
+    <a href="index.html" class="logo d-flex align-items-center" >
+      <img  src="../../assets/img/Environmental & Analytical Suppiles.png" alt="ASP Logo" width="125" height="90">
     </a>
     <button class="mobile-nav-toggle bi bi-list" (click)="toggleSidebar()"></button>
     <nav id="navbar" class="navbar">
       <ul>
-        <li><a [routerLink]="['/home']" routerLinkActive="active">Home</a></li>
-        <li class="dropdown"><a [routerLink]="['/products']" routerLinkActive="active"><span>Products</span> <i
+        <li><a [routerLink]="['/home']" routerLinkActive="active" style="color: black ; font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', 'Arial', 'sans-serif';">Home</a></li>
+        <li class="dropdown"><a [routerLink]="['/products']" routerLinkActive="active" style="color: black ; font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', 'Arial', 'sans-serif';"><span>Products</span> <i
               class="bi bi-chevron-down dropdown-indicator"></i></a>
-          <ul class="dropdown-content side-by-side">
+          <ul class="dropdown-content side-by-side" style="color: black ; font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', 'Arial', 'sans-serif';">
             <div class="column">
               <li style="margin-left: 10%; font-size: larger; color: rgb(000,121,191);">Environmental</li>
               <li><a [routerLink]="['/caaqms']" (click)="set()">CAAQMS</a></li>
@@ -31,11 +31,11 @@
             </div>
           </ul>
         </li>
-        <li><a [routerLink]="['/services']" (click)="set()" routerLinkActive="active">Services</a></li>
-        <li><a [routerLink]="['/contact']" routerLinkActive="active">Contact Us</a></li>
+        <li><a [routerLink]="['/services']" (click)="set()" routerLinkActive="active" style="color: black ; font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', 'Arial', 'sans-serif';">Services</a></li>
+        <li><a [routerLink]="['/contact']" routerLinkActive="active" style="color: black ; font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', 'Arial', 'sans-serif';">Contact Us</a></li>
       </ul>
     </nav>
-    <div id="sidebar" class="sidebar" [ngClass]="{'active': sidebarActive}">
+    <div id="sidebar" class="sidebar" [ngClass]="{'active': sidebarActive}" style="color: black ; font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', 'Arial', 'sans-serif';">
       <div class="sidebar-header">
         <button class="mobile-nav-toggle bi bi-x" (click)="toggleSidebar()"></button>
       </div>

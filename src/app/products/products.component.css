@@ -8,20 +8,28 @@
 
   /* CSS for product card animation, hover, and border lighting effect */
 .card {
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-  border: 1px solid transparent;
+  /* transition: transform 0.3s ease, box-shadow 0.3s ease; */
+  border: 2;
+  border-color:chocolate;
 }
 
-.card:hover {
+/* .card:hover {
   transform: scale(1.05);
-  box-shadow: 0 0 15px rgba(255, 193, 7, 0.5); /* Add a shadow with yellow color (warning color) */
-  border-color: rgba(255, 193, 7, 0.8); /* Border lighting effect */
-}
+  box-shadow: 0 0 15px rgba(255, 193, 7, 0.5); 
+  border-color: rgba(255, 193, 7, 0.8); 
+} */
 
-.card img {
+
+
+/* .card img {
   transition: transform 0.3s ease;
-}
+} */
 
-.card:hover img {
+/* .card:hover img {
   transform: scale(1.1);
+} */
+
+a {
+  color: rgb(000, 121, 191); 
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', 'Arial', 'sans-serif';
 }

@@ -1,4 +1,8 @@
 /* CSS for the dropdown */
+#header{
+ background-color: #f9f1f1;
+ position: fixed;
+}
 .dropdown-content {
   display: none;
   position: absolute;
@@ -27,9 +31,7 @@
 }
 
 /* Desktop and tablet styles */
-.header {
-  /* Add your header styles here */
-}
+
 
 .navbar {
   display: flex;
@@ -87,8 +89,8 @@
   display: block;
 }
 
-/* Mobile styles */
-@media (max-width: 768px) {
+/* Mobile styles 1279 */
+@media (max-width: 1279px) {
   .navbar {
     display: none;
   }
@@ -105,3 +107,68 @@
     display: block;
   }
 }
+
+
+/* Tablet landscape */
+/* @media (min-width: 768px) and (max-width: 1024px) {
+  #navbar {
+    flex-direction: column;
+    align-items: center;
+  }
+  #navbar ul {
+    flex-direction: column;
+    align-items: center;
+  }
+  #navbar li {
+    width: 100%;
+    text-align: center;
+  }
+  #navbar .dropdown-content {
+    display: block;
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  }
+  #navbar .dropdown-content .column {
+    width: 50%;
+    float: left;
+    padding: 20px;
+  }
+  #navbar .vertical-line {
+    display: none;
+  }
+} */
+
+/* Tablet portrait */
+/* @media (min-width: 768px) and (max-width: 1024px)  {
+
+
+  #navbar {
+    flex-direction: column;
+    align-items: center;
+  }
+  #navbar ul {
+    flex-direction: column;
+    align-items: center;
+  }
+  #navbar li {
+    width: 100%;
+    text-align: center;
+  }
+  #navbar .dropdown-content {
+    display: block;
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+  }
+} */
