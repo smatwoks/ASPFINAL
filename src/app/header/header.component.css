@@ -1,7 +1,7 @@
 /* CSS for the dropdown */
 #header{
  background-color: #f9f1f1;
- position: fixed;
+ position: sticky;
 }
 .dropdown-content {
   display: none;
