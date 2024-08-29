@@ -1,7 +1,23 @@
 /* CSS for the dropdown */
+/* Add this to your CSS file */
+@media only screen and (min-width: 778px) and (max-width: 1024px) {
+  .one{
+    height: auto;
+  }
+}
+
+
+
+
+
+
+
+
+
 #header{
  background-color: #f9f1f1;
  position: sticky;
+ 
 }
 .dropdown-content {
   display: none;
@@ -90,7 +106,7 @@
 }
 
 /* Mobile styles 1279 */
-@media (max-width: 1279px) {
+@media (max-width: 780px) {
   .navbar {
     display: none;
   }

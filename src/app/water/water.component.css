@@ -5,6 +5,25 @@
     justify-content: center;
   }
   
+
+  h4{
+    color: rgb(000, 121, 191); 
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', 'Arial','sans-serif';
+   }
+ 
+   p {
+     font-size: small;
+     text-align:justify;  padding-right: 2%; 
+   }
+ 
+   li{
+     font-size: small;
+     
+   }
+   h5{
+     font-size: small;
+   }
+ 
   .portfolio-flters li {
     margin-bottom: 10px;
   }

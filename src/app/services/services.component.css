@@ -9,7 +9,23 @@
     margin-bottom: 10px;
   }
 
-
+  h4{
+    color: rgb(000, 121, 191); 
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', 'Arial','sans-serif';
+   }
+ 
+   p {
+     font-size: small;
+     text-align:justify;  padding-right: 2%; 
+   }
+ 
+   li{
+     font-size: small;
+     /* text-align:justify;  padding-right: 2%; */
+   }
+   h5{
+     font-size: small;
+   }
   #one, #two {
     display: inline-block;
     vertical-align: top;

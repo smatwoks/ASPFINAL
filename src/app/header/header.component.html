@@ -1,10 +1,148 @@
-<header id="header" class="header d-flex align-items-center" style="height: fit-content;">
-  <div class="container-fluid container-xl d-flex align-items-center justify-content-between" >
+<!-- 
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>CSS Grid Navigation Bar</title>
+ 
+</head>
+
+<body>
+
+  <header>
+    <nav>
+      <div id="navbar" style="display: flex;">
+        <div class="container-fluid one" >
+          <div id="logo" class="reverse">
+            <div class="logo">Gr<span>id</span> CSS</div>
+            <img src="../../assets/img/Environmental___Analytical_Suppiles-removebg-preview.png" alt="" height="20%" width="auto">
+          </div>
+        </div>
+
+        <div id="links" class="two" style="align-items: center;">
+          <a href="">Home</a>
+          <a href="">About</a>
+          <a href="">Blog</a>
+          <a href="">Service</a>
+          <a href="">Contact</a>
+        </div>
+      </div>
+
+    </nav>
+    
+  </header>
+  
+  
+ </body>
+
+</html> -->
+
+
+
+
+<!--   <section>
+  <div style="border:solid 1px #fff; padding-top:50px; text-align:center">
+    <iframe src="https://www.facebook.com/plugins/like.php?href=https%3A%2F%2Fwww.facebook.com%2Fewebdesigns%2F&width=450&layout=standard&action=like&size=small&show_faces=true" width="450" height="80" style="border:none;overflow:hidden"></iframe>
+  </div>
+</section> -->
+
+
+
+
+
+
+
+
+
+<!-- <div class="container-fluid">
+
+
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <a class="navbar-brand" href="#">Navbar</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+    <ul class="navbar-nav ml-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item dropdown hover-dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" aria-haspopup="true" aria-expanded="false">
+          Link
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="#">Action</a>
+          <a class="dropdown-item" href="#">Another action</a>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item" href="#">Something else here</a>
+        </div>
+      </li>
+      <li class="nav-item active">
+        <a class="nav-link" href="#">Services</a>
+      </li>
+      <li class="nav-item active">
+        <a class="nav-link" href="#">Contact Us</a>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">Navbar</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Link</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Dropdown
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <li><a class="dropdown-item" href="#">Action</a></li>
+            <li><a class="dropdown-item" href="#">Another action</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="#">Something else here</a></li>
+          </ul>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Services</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Contact Us</a>
+        </li>
+       
+      </ul>
+      <form class="d-flex">
+        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-success" type="submit">Search</button>
+      </form>
+    </div>
+  </div>
+</nav>
+  
+  
+</div> -->
+
+ <header id="header" class="header d-flex align-items-center" style="height: fit-content;">
+  <div class="container-fluid container-xl d-flex align-items-center justify-content-between"  style="height: 20px;">
     <a href="index.html" class="logo d-flex align-items-center" >
-      <img  src="../../assets/img/Environmental___Analytical_Suppiles-removebg-preview.png" alt="ASP Logo" width="125" height="90">
+      <img  src="../../assets/img/Environmental___Analytical_Suppiles-removebg-preview.png" alt="ASP Logo" width="125" height="100px">
     </a>
     <button class="mobile-nav-toggle bi bi-list" (click)="toggleSidebar()"></button>
-    <nav id="navbar" class="navbar">
+    <nav id="navbar" class="navbar one">
       <ul>
         <li><a [routerLink]="['/home']" routerLinkActive="active" style="color: black ; font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', 'Arial', 'sans-serif';">Home</a></li>
         <li class="dropdown"><a [routerLink]="['/products']" routerLinkActive="active" style="color: black ; font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', 'Arial', 'sans-serif';"><span>Products</span> <i
@@ -17,8 +155,7 @@
               <li><a [routerLink]="['/eqms']" (click)="set()">EQMS</a></li>              
               <li><a [routerLink]="['/air']" (click)="set()">Online Air Quality</a></li>
               <li><a [routerLink]="['/water']" (click)="set()">Online Water Quality</a></li>
-              <!-- <li><a [routerLink]="['/port']" (click)="set()">Portable</a></li> -->
-            </div>
+             </div>
             <div class="vertical-line"></div>
             <div class="column">
               <li style="margin-left: 10%; font-size: larger; color: rgb(000,121,191);">Analytical</li>
@@ -71,4 +208,4 @@
     
     </div>
   </div>
-</header>
+</header> 

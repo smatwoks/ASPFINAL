@@ -1,8 +1,19 @@
-h3{
+
+ h4{
   color: rgb(000, 121, 191); 
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', 'Arial','sans-serif';
  }
 
+ p {
+   font-size: small;
+ }
+
+ li{
+   font-size: small;
+ }
+ h5{
+   font-size: small;
+ }
 
 .portfolio-flters {
     display: flex;

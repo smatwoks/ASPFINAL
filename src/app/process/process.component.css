@@ -23,10 +23,23 @@
     width: 80%;
   }
 
-  h3 {
+  h4{
     color: rgb(000, 121, 191); 
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', 'Arial', 'sans-serif';
-  }
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', 'Arial','sans-serif';
+   }
+ 
+   p {
+     font-size: small;
+     text-align:justify;  padding-right: 2%; 
+   }
+ 
+   li{
+     font-size: small;
+     /* text-align:justify;  padding-right: 2%; */
+   }
+   h5{
+     font-size: small;
+   }
   
   .row {
     padding-left: 0%;

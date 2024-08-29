@@ -11,6 +11,14 @@ export class HeaderComponent  {
   environmentalDropdownActive = false;
   analyticalDropdownActive = false;
 
+  ope(): void {
+    const mySidenav: HTMLElement | null = document.getElementById("mySidenav");
+    if (mySidenav) {
+      mySidenav.style.width = "250px";
+    }
+    console.log("sdfs");
+  }
+
   toggleSidebar() {
     this.sidebarActive = !this.sidebarActive;
   }

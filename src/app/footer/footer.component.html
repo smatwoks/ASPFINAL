@@ -1,7 +1,81 @@
 <!-- ======= Footer ======= -->
-<footer id="footer" class="footer">
 
-  <div class="footer-content position-relative">
+
+
+<div style="align-items: center; text-align: center; margin-top: 1%; margin-bottom: 2%;">
+  <h1>Our Clientele</h1>
+</div>
+
+<div class="container-fluid" style="margin-bottom: 1%;">
+  <div class="slider">
+    <div class="slide-track">
+      <div class="slide">
+        <img src="../../assets/img/logo/dalmiya.png" height="100" width="250" alt="" />
+      </div>
+      <div class="slide">
+        <img src="../../assets/img/logo/ultra.png" height="100" width="250" alt="" />
+      </div>
+      <div class="slide">
+        <img src="../../assets/img/logo/ramco.jpeg" height="100" width="250" alt="" />
+      </div>
+      <div class="slide">
+        <img src="../../assets/img/logo/india.png" height="100" width="250" alt="" />
+      </div>
+      <div class="slide">
+        <img src="../../assets/img/logo/bhavya.png" height="100" width="250" alt="" />
+      </div>
+      <div class="slide">
+        <img src="../../assets/img/logo/ajani.png" height="100" width="250" alt="" />
+      </div>
+      <div class="slide">
+        <img src="../../assets/img/logo/chetinadu.png" height="100" width="250" alt="" />
+      </div>
+      <div class="slide">
+        <img src="../../assets/img/logo/nagarguna.png" height="100" width="250" alt="" />
+      </div>
+      <div class="slide">
+        <img src="../../assets/img/logo/tmt.jpeg" height="100" width="250" alt="" />
+      </div>
+      <div class="slide">
+        <img src="../../assets/img/logo/penna.jpeg" height="100" width="250" alt="" />
+      </div>
+      <div class="slide">
+        <img src="../../assets/img/logo/electro.png" height="100" width="250" alt="" />
+      </div>
+      <div class="slide">
+        <img src="../../assets/img/logo/sanvira.png" height="100" width="250" alt="" />
+      </div>
+      <div class="slide">
+        <img src="../../assets/img/logo/sri.png" height="100" width="250" alt="" />
+      </div>
+      <div class="slide">
+        <img src="../../assets/img/logo/prashakthi.jpeg" height="100" width="250" alt="" />
+      </div>
+      <div class="slide">
+        <img src="../../assets/img/logo/sagar.png" height="100" width="250" alt="" />
+      </div>
+      <div class="slide">
+        <img src="../../assets/img/logo/panyam.png" height="100" width="250" alt="" />
+      </div>
+      <div class="slide">
+        <img src="../../assets/img/logo/birla white.jpeg" height="100" width="250" alt="" />
+      </div>
+      <div class="slide">
+        <img src="../../assets/img/logo/nava.jpeg" height="100" width="250" alt="" />
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+
+<footer id="footer"  style="background-color:azure  " >
+
+  <div class="footer-content position-relative" style="padding-top: 3%; padding-bottom: 3%;">
     <div class="container">
       <div class="row">
 
@@ -29,10 +103,10 @@
         <div class="col-lg-4 col-md-3 footer-links">
           <h4>Useful Links</h4>
           <ul>
-            <li><a routerLink="/home">Home</a></li>
-            <li><a routerLink="/product">Products</a></li>
-            <li><a routerLink="/service">Services</a></li>
-            <li><a routerLink="/contact">Contact us</a></li>
+            <li><a routerLink="/home">Home</a> </li>
+            <li><a [routerLink]="['/products']" >Products</a></li>
+            <li><a [routerLink]="['/services']">Services</a></li>
+            <li><a [routerLink]="['/contact']">Contact us</a></li>
             <!-- <li><a href="#">Privacy policy</a></li> -->
           </ul>
         </div><!-- End footer links column-->
@@ -40,10 +114,10 @@
         <div class="col-lg-4 col-md-3 footer-links">
           <h4>Our Services</h4>
           <ul>
-            <li><a routerLink="/service">CAAQMS</a></li>
-            <li><a routerLink="/service">CEMS</a></li>
-            <li><a routerLink="/service">Data Uploading</a></li>
-            <li><a routerLink="/service">EQMS</a></li>
+            <li><a routerLink="/services">CAAQMS</a></li>
+            <li><a routerLink="/services">CEMS</a></li>
+            <li><a routerLink="/services">Data Uploading</a></li>
+            <li><a routerLink="/services">EQMS</a></li>
             <!-- <li><a href="#">Graphic Design</a></li> -->
           </ul>
         </div><!-- End footer links column-->
@@ -66,7 +140,7 @@
   <div class="footer-legal text-center position-relative">
     <div class="container">
       <div class="copyright">
-        <strong><span>ASP</span></strong>
+        <!-- <strong><span>ASP</span></strong> -->
       </div>
     </div>
   </div>
