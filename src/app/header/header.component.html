@@ -1,3 +1,89 @@
+<!-- header.component.html: -->
+
+
+<header id="header" class="header d-flex align-items-center" style="height: fit-content;">
+  <div class="container-fluid container-xl d-flex align-items-center justify-content-between" style="height: 20px;">
+    <a href="index.html" class="logo d-flex align-items-center">
+      <img src="../../assets/img/Environmental___Analytical_Suppiles-removebg-preview.png" alt="ASP Logo" width="125" height="100px">
+    </a>
+    <button class="mobile-nav-toggle bi bi-list" (click)="toggleSidebar()"></button>
+    <nav id="navbar" class="main-navbar">
+      <ul>
+        <li><a [routerLink]="['/home']" routerLinkActive="active" style="color: black; font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', 'Arial', 'sans-serif';">Home</a></li>
+        <li class="dropdown"><a [routerLink]="['/products']" routerLinkActive="active" style="color: black; font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', 'Arial', 'sans-serif';"><span>Products</span> <i class="bi bi-chevron-down dropdown-indicator"></i></a>
+          <ul class="dropdown-content side-by-side" style="color: black; font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', 'Arial', 'sans-serif';">
+            <div class="column">
+              <li style="margin-left: 10%; font-size: larger; color: rgb(000,121,191);">Environmental</li>
+              <li><a [routerLink]="['/caaqms']" (click)="set()">CAAQMS</a></li>
+              <li><a [routerLink]="['/cems']" (click)="set()">CEMS</a></li>
+              <li><a [routerLink]="['/eqms']" (click)="set()">EQMS</a></li>
+              <li><a [routerLink]="['/air']" (click)="set()">Online Air Quality</a></li>
+              <li><a [routerLink]="['/water']" (click)="set()">Online Water Quality</a></li>
+            </div>
+            <div class="vertical-line"></div>
+            <div class="column">
+              <li style="margin-left: 10%; font-size: larger; color: rgb(000,121,191);">Analytical</li>
+              <li><a [routerLink]="['/purpose']" (click)="set()">General Purpose</a></li>
+              <li><a [routerLink]="['/process']" (click)="set()">Process</a></li>
+              <li><a [routerLink]="['/lab']" (click)="set()">Lab Use</a></li>
+              <li><a [routerLink]="['/medical']" (click)="set()">Medical</a></li>
+              <li><a [routerLink]="['/environ']" (click)="set()">Environmental</a></li>
+              <li><a [routerLink]="['/attach']" (click)="set()">Attachment</a></li>
+            </div>
+          </ul>
+        </li>
+        <li><a [routerLink]="['/services']" (click)="set()" routerLinkActive="active" style="color: black; font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', 'Arial', 'sans-serif';">Services</a></li>
+        <li><a [routerLink]="['/contact']" routerLinkActive="active" style="color: black; font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', 'Arial', 'sans-serif';">Contact Us</a></li>
+      </ul>
+    </nav>
+    <div id="sidebar" class="sidebar" [ngClass]="{'active': sidebarActive}" style="color: black; font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', 'Arial', 'sans-serif';">
+      <div class="sidebar-header">
+        <button class="mobile-nav-toggle bi bi-x" (click)="toggleSidebar()"></button>
+      </div>
+      <ul>
+        <li><a [routerLink]="['/home']" (click)="toggleSidebar()">Home</a></li>
+        <li class="dropdown"><a (click)="toggleDropdown()">Products ⬇</a>
+          <ul [ngClass]="{'show': dropdownActive}">
+            <li class="dropdown"><a (click)="toggleEnvironmentalDropdown()">Environmental ⬇</a>
+              <ul [ngClass]="{'show': environmentalDropdownActive}">
+                <li><a [routerLink]="['/caaqms']" (click)="toggleSidebar()" (click)="set()">CAAQMS</a></li>
+                <li><a [routerLink]="['/cems']" (click)="toggleSidebar()" (click)="set()">CEMS</a></li>
+                <li><a [routerLink]="['/eqms']" (click)="toggleSidebar()" (click)="set()">EQMS</a></li>
+                <li><a [routerLink]="['/water']" (click)="toggleSidebar()" (click)="set()">Online Water Quality</a></li>
+                <li><a [routerLink]="['/air']" (click)="toggleSidebar()" (click)="set()">Online Air Quality</a></li>
+                <li><a [routerLink]="['/port']" (click)="toggleSidebar()" (click)="set()">Portable</a></li>
+              </ul>
+            </li>
+            <li class="dropdown"><a (click)="toggleAnalyticalDropdown()">Analytical ⬇</a>
+              <ul [ngClass]="{'show': analyticalDropdownActive}">
+                <li><a [routerLink]="['/purpose']" (click)="toggleSidebar()" (click)="set()">General Purpose</a></li>
+                <li><a [routerLink]="['/process']" (click)="toggleSidebar()" (click)="set()">Process</a></li>
+                <li><a [routerLink]="['/lab']" (click)="toggleSidebar()" (click)="set()">Lab Use</a></li>
+                <li><a [routerLink]="['/medical']" (click)="toggleSidebar()" (click)="set()">Medical</a></li>
+                <li><a [routerLink]="['/environ']" (click)="toggleSidebar()" (click)="set()">Environmental</a></li>
+                <li><a [routerLink]="['/attach']" (click)="toggleSidebar()" (click)="set()">Attachment</a></li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+        <li><a [routerLink]="['/services']" (click)="toggleSidebar()" (click)="set()">Services</a></li>
+        <li><a [routerLink]="['/contact']" (click)="toggleSidebar()">Contact Us</a></li>
+      </ul>
+    </div>
+  </div>
+</header>
+
+
+
+
+
+
+
+
+
+
+
+
 <!-- 
 <!DOCTYPE html>
 <html lang="en">
@@ -136,7 +222,7 @@
   
 </div> -->
 
- <header id="header" class="header d-flex align-items-center" style="height: fit-content;">
+ <!-- <header id="header" class="header d-flex align-items-center" style="height: fit-content;">
   <div class="container-fluid container-xl d-flex align-items-center justify-content-between"  style="height: 20px;">
     <a href="index.html" class="logo d-flex align-items-center" >
       <img  src="../../assets/img/Environmental___Analytical_Suppiles-removebg-preview.png" alt="ASP Logo" width="125" height="100px">
@@ -208,4 +294,4 @@
     
     </div>
   </div>
-</header> 
+</header>  -->

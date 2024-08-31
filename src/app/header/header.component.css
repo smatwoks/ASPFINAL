@@ -1,8 +1,168 @@
+/* header.component.css: */
+
 /* CSS for the dropdown */
 /* Add this to your CSS file */
 @media only screen and (min-width: 778px) and (max-width: 1024px) {
-  .one{
+  .main-navbar {
     height: auto;
+  }
+}
+
+#header {
+  background-color: #f9f1f1;
+  position: sticky;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+}
+
+li:hover{
+  text-decoration: underline;
+  text-decoration-color: yellow;
+  text-decoration-thickness: 2px;
+}
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #ffffff; /* White background */
+  min-width: 250px; /* Increased width for better spacing */
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2); /* Box shadow for dropdown */
+  z-index: 1;
+  padding: 15px; /* Padding around the dropdown content */
+  border-radius: 5px; /* Rounded corners */
+}
+
+.dropdown:hover .dropdown-content {
+  display: flex;
+}
+
+.side-by-side {
+  display: flex;
+  flex-direction: row; /* Ensure columns are side by side */
+}
+
+.column {
+  flex: 1;
+  padding: 10px;
+}
+
+.column li {
+  padding: 10px 15px; /* Padding for each dropdown item */
+  margin: 5px 0; /* Margin for each dropdown item */
+  font-size: 16px; /* Font size for better readability */
+  list-style: none; /* Remove default list style */
+}
+
+.column li a {
+  text-decoration: none; /* Remove underline from links */
+  color: #000; /* Black text color */
+  display: block; /* Make the link fill the li */
+  border-radius: 3px; /* Rounded corners for items */
+  transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transition for hover effects */
+}
+
+.column li a:hover {
+  background-color: #f1f1f1; /* Light grey background on hover */
+  color: #000; /* Dark text color on hover */
+}
+
+.vertical-line {
+  border-left: 1px solid #ddd; /* Light grey line */
+  height: auto; /* Full height */
+  margin: 0 10px; /* Margin around the line */
+}
+
+/* Main navbar styles */
+.main-navbar {
+  display: flex; /* Flex display for navbar */
+  align-items: center; /* Center items vertically */
+}
+
+.main-navbar ul {
+  display: flex; /* Flex display for list */
+  list-style: none; /* No bullet points */
+  padding: 0; /* No padding */
+  margin: 0; /* No margin */
+}
+
+.main-navbar ul li {
+  margin-right: 20px;
+}
+
+.main-navbar ul li a {
+  text-decoration: none; /* No underline */
+  color: black; /* Black text color */
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', 'Arial', 'sans-serif'; /* Font family */
+}
+
+.mobile-nav-toggle {
+  display: none; /* Hidden by default */
+}
+
+/* Sidebar styles */
+.sidebar {
+  display: none; /* Hidden by default */
+  position: fixed; /* Fixed position */
+  top: 0; /* Top of the screen */
+  right: 0; /* Right side of the screen */
+  height: 100%; /* Full height */
+  width: 250px; /* Fixed width */
+  background-color: #fff; /* White background */
+  box-shadow: -2px 0 5px rgba(0, 0, 0, 0.5); /* Box shadow */
+  padding: 1rem; /* Padding within sidebar */
+  transition: transform 0.3s ease; /* Smooth transition */
+  transform: translateX(100%); /* Hidden off-screen */
+}
+
+.sidebar.active {
+  transform: translateX(0); /* Show sidebar */
+}
+
+.sidebar-header {
+  display: flex; /* Flex display */
+  justify-content: flex-end; /* Align to the right */
+}
+
+.sidebar ul {
+  list-style: none; /* No bullet points */
+  padding: 0; /* No padding */
+}
+
+.sidebar ul li {
+  margin: 1rem 0; /* Space between items */
+}
+
+.sidebar ul li a {
+  color: #000; /* Black text color */
+  text-decoration: none; /* No underline */
+}
+
+.dropdown ul {
+  display: none; /* Hidden by default */
+  list-style: none; /* No bullet points */
+  padding: 0; /* No padding */
+}
+
+.dropdown .show {
+  display: block; /* Show dropdown */
+}
+
+/* Mobile styles */
+@media (max-width: 780px) {
+  .main-navbar {
+    display: none; /* Hidden on mobile */
+  }
+
+  .mobile-nav-toggle {
+    display: block; /* Show toggle button */
+    font-size: 2rem; /* Large font size */
+    cursor: pointer; /* Pointer cursor */
+    background: none; /* No background */
+    border: none; /* No border */
+  }
+
+  .sidebar {
+    display: block; /* Show sidebar */
   }
 }
 
@@ -14,20 +174,56 @@
 
 
 
-#header{
+
+
+/* CSS for the dropdown */
+/* Add this to your CSS file */
+
+
+
+/* @media only screen and (min-width: 778px) and (max-width: 1024px) {
+  .one{
+    height: auto;
+  }
+} */
+
+
+
+
+/* @media (max-width: 1271px) {
+  .navbar {
+    display: none;
+  }
+
+  .mobile-nav-toggle {
+    display: block;
+    font-size: 2rem;
+    cursor: pointer;
+    background: none;
+    border: none;
+  }
+
+  .sidebar {
+    display: block;
+  }
+} */
+
+
+
+/* #header{
  background-color: #f9f1f1;
  position: sticky;
  
-}
-.dropdown-content {
+} */
+/* .dropdown-content {
   display: none;
   position: absolute;
   background-color: #f9f9f9;
   min-width: 160px;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   z-index: 1;
-}
-
+} */
+/* 
 .dropdown:hover .dropdown-content {
   display: flex;
 }
@@ -46,7 +242,6 @@
   height: 100%;
 }
 
-/* Desktop and tablet styles */
 
 
 .navbar {
@@ -57,7 +252,6 @@
   display: none;
 }
 
-/* Sidebar styles */
 .sidebar {
   display: none;
   position: fixed;
@@ -103,10 +297,10 @@
 
 .dropdown .show {
   display: block;
-}
+} */
 
 /* Mobile styles 1279 */
-@media (max-width: 780px) {
+/* @media (max-width: 780px) {
   .navbar {
     display: none;
   }
@@ -122,7 +316,7 @@
   .sidebar {
     display: block;
   }
-}
+} */
 
 
 /* Tablet landscape */
